@@ -11591,6 +11591,7 @@ pre .code {
 }
 
 @media (max-width: 767.98px) {
+  
   .header {
     height: 500px;
     min-height: 500px;
@@ -11720,4 +11721,11 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+      display: none;
+  }
 }
