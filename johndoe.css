@@ -269,12 +269,12 @@ select {
   word-wrap: normal;
 }
 
-button,
+/* button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-}
+} */
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -297,12 +297,12 @@ input[type="checkbox"] {
   padding: 0;
 }
 
-input[type="date"],
+/* input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
   -webkit-appearance: listbox;
-}
+} */
 
 textarea {
   overflow: auto;
@@ -337,10 +337,10 @@ progress {
   height: auto;
 }
 
-[type="search"] {
+/* [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
-}
+} */
 
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -11391,6 +11391,27 @@ pre .code {
   color: #F85C70;
 }
 
+.social-icons .ti-twitter:before {
+  content: "\e600";
+}
+
+.social-icons .ti-google:before {
+  content: "\e601";
+}
+
+.social-icons .ti-instagram:before {
+  content: "\e602";
+}
+
+.social-icons .ti-facebook:before {
+  content: "\e603";
+}
+
+.social-icons .ti-github:before {
+  content: "\e604";
+}
+
+
 .navbar {
   box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
   -webkit-box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
@@ -11421,6 +11442,23 @@ pre .code {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -weblit-transform: translate(-50%, -50%);
+  border: 10px solid white;
+  -webkit-transition: .5s !important;
+  transition: .5s !important;
+  -weblit-transition: .5s !important;
+  z-index: 2;
+  box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
+  width: 170px;
+  border-radius: 50%;
+}
+.custom-img {
+  position: absolute;
+  left: 50%;
+  top: 106%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -11513,11 +11551,12 @@ pre .code {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
+  background-color: lightslategray;
 }
 
 .header .container {
   position: relative;
-  height: 100%;
+  height: 80%;
 }
 
 .header .header-content {
